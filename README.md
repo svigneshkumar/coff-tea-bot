@@ -1,2 +1,6 @@
-# online_cafe_bot
-The chatbot is created using pytorch for online business store for coffee and tea.
+# coff-tea_bot
+This chatbot is created for online business store for selling coffee and tea powders.
+This Natural Language Processing Chatbot is constructed using Deep Learning Modules such as Neural Networks using Pytorch and NLTK package.
+This chatbot is still under development.
+
+
