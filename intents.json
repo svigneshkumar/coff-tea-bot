@@ -8,44 +8,102 @@
           "How are you",
           "Is anyone there?",
           "Hello",
-          "Good day"
+          "Good day",
+          "Hi bot",
+          "Good Morning",
+          "Good Evening",
+          "Good Afternoon",
+          "Good Night",
+          "Dear"
         ],
         "responses": [
           "Hey :-)",
           "Hello, thanks for visiting",
           "Hi there, what can I do for you?",
-          "Hi there, how can I help?"
+          "Hi there, how can I help?",
+          "Hey there",
+          "Hi, How may I help you?",
+          "Welcome",
+          "Nice to meet you here!",
+          "Hello Buddy"
         ]
       },
       {
         "tag": "goodbye",
-        "patterns": ["Bye", "See you later", "Goodbye"],
+        "patterns": ["Bye", "See you later", "Goodbye", "tatta", "will see you back later", "Its Enough", "Glad to meet you", "bye bye", "meet you soon" ],
         "responses": [
           "See you later, thanks for visiting",
           "Have a nice day",
-          "Bye! Come back again soon."
+          "Bye! Come back again soon.",
+          "Bye",
+          "Come back soon!",
+          "Contact me if you have any queries.",
+          "Waiting for you!"
         ]
       },
       {
         "tag": "thanks",
         "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-        "responses": ["Happy to help!", "Any time!", "My pleasure"]
+        "responses": ["Happy to help!", "Any time!", "My pleasure", "Visit again!", ]
       },
       {
         "tag": "items",
         "patterns": [
           "Which items do you have?",
           "What kinds of items are there?",
-          "What do you sell?"
+          "What do you sell?",
+          "items",
+          "sell",
+          "what You have?",
+          "what can i order?",
+          "What do you have?",
+          "What can u offer?",
+          "Do u have tea?",
+          "do u have coffee?",
+          "What drinks do u sell?",
+          "What kind of products u have?"
         ],
         "responses": [
           "We sell coffee and tea",
-          "We have coffee and tea"
+          "We have coffee and tea",
+          "we sell both coffee and tea",
+          "we offer coffee and tea",
+          "I have coffee and Tea",
+          "we have both tea and coffee",
+          "we have tea as well as coffee",
+          "we provide u tea and coffee",
+          "Tea and Coffee are sold by us",
+          "Tea and coffee",
+          "Both hot drinks, Coffee and Tea",
+          "We give u coffee and tea"
         ]
       },
       {
         "tag": "payments",
         "patterns": [
+          "credit card",
+          "master card",
+          "Visa Card",
+          "Payment interface",
+          "how can i pay",
+          "paytm",
+          "do u have paytm",
+          "do u use paytm",
+          "do u have phonepe",
+          "do u use phonepe",
+          "do u have google pay",
+          "do u use google pay",
+          "do u have gpay",
+          "do u use gpay",
+          "gpay",
+          "phone pe",
+          "google pay",
+          "can i use debit card?",
+          "debit card",
+          "do debit card is accepted?",
+          "can i use qrcode pay",
+          "can i use qrcode for payment?",
+          "which payment method do u accept",
           "Do you take credit cards?",
           "Do you accept Mastercard?",
           "Can I pay with Paypal?",
@@ -53,7 +111,11 @@
         ],
         "responses": [
           "We accept VISA, Mastercard and Paypal",
-          "We accept most major credit cards, and Paypal"
+          "We accept most major credit cards, and Paypal",
+          "we accept paytm, google pay, phone pe, pay pal",
+          "we accept cards such as debit and credit",
+          "Qrcode pay also available",
+          "Yes, You can use any payment interface"
         ]
       },
       {
@@ -61,11 +123,21 @@
         "patterns": [
           "How long does delivery take?",
           "How long does shipping take?",
-          "When do I get my delivery?"
+          "When do I get my delivery?",
+          "when can i expect my delivery?",
+          "delivery",
+          "how long it takes to deliver",
+          "how many days to deliver?",
+          "days to deliver?",
+          "shipment period",
+          "delivery period"
         ],
         "responses": [
           "Delivery takes 2-4 days",
-          "Shipping takes 2-4 days"
+          "Shipping takes 2-4 days",
+          "It takes 2-4 days for shipment",
+          "It takes 2-4 days to deliver",
+          "Please be patient, It takes 2-4 days"
         ]
       },
       {
