@@ -174,7 +174,57 @@
           "please, tell me",
           "yes, please"
         ]
+      },
+      {
+        "tag": "flavour",
+        "patterns": [
+        "flavours",
+        "flavour",
+        "which flavours are available?",
+        "how many flavours available?",
+        "kinds of flavours?",
+        "available flavours"
+      ],
+        "responses": [
+         "There are 17 coffee flavours and 22 tea flavours",
+         "There are 22 tea flavours and 17 coffee flavours",
+         "\nCoffee - 17\nTea - 22",
+         "\nTea - 22\nCoffee - 17"
+        ]
+      },
+      {
+        "tag": "Tea",
+        "patterns": [
+        "what tea flavours available?",
+        "tea flavours?",
+        "tea",
+        "can u say some tea flavours",
+        "suggest me some tea flavours",
+        "available tea flavours?",
+        "some tea flavours?",
+        "what tea flavours do u sell?",
+        "i need tea flavours"
+      ],
+        "responses": [
+         "\nTea Varaities: \n\n Apple \n Blueberry \n Caramel \n Chai \n Chamomile \n Chocolate \n Cinnamon\n Cranberry\n Ginger\n Hibiscus\n Lemon\n Lemongrass\n Mango\n Mint\n Orange\n Peach\n Pomegranate\n Pumpkin\n Raspberry\n Rose hips\n Turmeric\n Vanilla"
+        ]
+      },
+      {
+        "tag": "Coffee",
+        "patterns": [
+        "what coffee flavours available?",
+        "coffee flavours?",
+        "coffee",
+        "can u say some coffee flavours",
+        "suggest me some coffee flavours",
+        "available coffee flavours?",
+        "some coffee flavours?"
+      ],
+        "responses": [
+         "\nCoffee Varaities:\n\n Black\n Latte\n Cappuccino\n Americano\n Espresso\n Doppio\n Cortado\n Red Eye\n Galao\n Lungo\n Macchiato\n Mocha\n Ristretto\n Flat White\n Affogato\n Cafe Au Lait\n Irish"
+        ]
       }
+      
     ]
   }
 
