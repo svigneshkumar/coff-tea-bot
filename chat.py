@@ -25,13 +25,15 @@ model = NeuralNet(input_size, hidden_size, output_size).to(device)
 model.load_state_dict(model_state)
 model.eval()
 
-bot_name = "Sam"
-print("Let's chat! (type 'quit' to exit)")
-while True:
+bot_name = "Glassy"
+#print("Let's chat! (type 'quit' to exit)")
+# while True:
     # sentence = "do you use credit cards?"
-    sentence = input("You: ")
-    if sentence == "quit":
-        break
+def response(text):
+    #sentence = input("You: ")
+    sentence = text
+    # if sentence == "quit":
+    #     break
 
     sentence = tokenize(sentence)
     X = bag_of_words(sentence, all_words)
@@ -48,6 +50,8 @@ while True:
     if prob.item() > 0.75:
         for intent in intents['intents']:
             if tag == intent["tag"]:
-                print(f"{bot_name}: {random.choice(intent['responses'])}")
+                #print(f"{bot_name}: {random.choice(intent['responses'])}")
+                return f"{bot_name}: {random.choice(intent['responses'])}"
     else:
-        print(f"{bot_name}: I do not understand...")
+        #print(f"{bot_name}: I do not understand...")
+        return f"{bot_name}: I do not understand..."
