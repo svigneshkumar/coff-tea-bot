@@ -1,0 +1,67 @@
+#Creating GUI with tkinter
+import tkinter
+from tkinter import *
+from chat import response
+
+
+def send():
+    msg = EntryBox.get("1.0",'end-1c').strip()
+    EntryBox.delete("0.0",END)
+
+    if msg != '':
+            ChatLog.config(state=NORMAL)
+            ChatLog.insert(END, "You: " + msg + '\n\n')
+            ChatLog.config(foreground="#442265", font=("Verdana", 12 ))
+
+            res = response(msg)
+            ChatLog.insert(END, res + '\n\n')
+
+            ChatLog.config(state=DISABLED)
+            ChatLog.yview(END)
+def welcome():
+    msg = "Hi I'm Glassy, How may I help you?"
+    ChatLog.config(state=NORMAL)
+    #ChatLog.insert(END, "You: " + msg + '\n\n')
+    ChatLog.config(foreground="#442265", font=("Verdana", 12 ))
+
+    #res = response(msg)
+    ChatLog.insert(END, msg + '\n\n')
+
+    ChatLog.config(state=DISABLED)
+    ChatLog.yview(END)
+
+    
+
+base = Tk()
+base.title("Glassy")
+base.geometry("500x680")
+base.resizable(width=FALSE, height=FALSE)
+
+#Create Chat window
+ChatLog = Text(base, bd=0, bg="#ADD8E6", height="20", width="80", font="Arial",)
+
+ChatLog.config(state=DISABLED)
+
+#Bind scrollbar to Chat window
+scrollbar = Scrollbar(base, command=ChatLog.yview, cursor="heart")
+ChatLog['yscrollcommand'] = scrollbar.set
+
+welcome()
+
+#Create Button to send message
+SendButton = Button(base, font=("Verdana",12,'bold'), text="Shoot", width="10", height="5",
+                    bd=0, bg="#0000A0", activebackground="#3c9d9b",fg='#ffffff',
+                    command= send )
+
+#Create the box to enter message
+EntryBox = Text(base, bd=0, bg="#ADD8E6",width="29", height="5", font="Arial")
+#EntryBox.bind("<Return>", send)
+
+
+#Place all components on the screen
+scrollbar.place(x=476,y=6, height=588)
+ChatLog.place(x=6,y=6, height=588, width=464)
+EntryBox.place(x=128, y=601, height=70, width=364)
+SendButton.place(x=6, y=601, height=70)
+
+base.mainloop()
