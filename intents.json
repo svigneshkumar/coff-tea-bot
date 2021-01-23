@@ -43,8 +43,8 @@
       },
       {
         "tag": "thanks",
-        "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-        "responses": ["Happy to help!", "Any time!", "My pleasure", "Visit again!", ]
+        "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!","awesome job","NO","nothing"],
+        "responses": ["Happy to help!", "Any time!", "My pleasure", "Visit again!"]
       },
       {
         "tag": "items",
@@ -61,7 +61,9 @@
           "Do u have tea?",
           "do u have coffee?",
           "What drinks do u sell?",
-          "What kind of products u have?"
+          "What kind of products u have?",
+          "hot drinks",
+          "What do u do?"
         ],
         "responses": [
           "We sell coffee and tea",
@@ -107,7 +109,9 @@
           "Do you take credit cards?",
           "Do you accept Mastercard?",
           "Can I pay with Paypal?",
-          "Are you cash only?"
+          "Are you cash only?",
+          "other payments?",
+          "how can i pay?"
         ],
         "responses": [
           "We accept VISA, Mastercard and Paypal",
@@ -130,7 +134,8 @@
           "how many days to deliver?",
           "days to deliver?",
           "shipment period",
-          "delivery period"
+          "delivery period",
+          "whats the delivery time?"
         ],
         "responses": [
           "Delivery takes 2-4 days",
@@ -151,6 +156,28 @@
           "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
           "What did the buffalo say when his son left for college? Bison."
         ]
+      },
+      {
+        "tag": "okay",
+        "patterns": [
+          "okay","ok","kk","k","kkkk","kkk","then"],
+        "responses": [
+          "Other queries?",
+          "any other?"
+        ]
+      },
+      {
+        "tag": "yes",
+        "patterns": [
+          "yes","yess","yes, I have queries.","yes i have","ss","s","yesss","yessss"],
+        "responses": [
+          "please, tell me",
+          "yes, please"
+        ]
       }
     ]
   }
+
+
+
+  
