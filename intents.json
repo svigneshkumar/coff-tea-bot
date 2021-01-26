@@ -111,7 +111,9 @@
           "Can I pay with Paypal?",
           "Are you cash only?",
           "other payments?",
-          "how can i pay?"
+          "how can i pay?",
+          "purchase",
+          "how can i purchase?"
         ],
         "responses": [
           "We accept VISA, Mastercard and Paypal",
